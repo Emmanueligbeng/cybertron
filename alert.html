@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alerts</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/worker-alert.css">
+</head>
+<body>
+  <nav>
+    <img src="./assets/logo.svg" alt="GeoHealth Logo" />
+  </nav>
+
+  <main>
+    <div class="main-right">
+      <img src="./assets/maleriaa.jpg" alt="Malaria infestation" class="rotated-img" height=""/>
+    </div>
+
+    <div class="main-left">
+      <section class="nav-tabs">
+        <div><a href="feedback.html"><p>Feedback</p></a></div>
+        <div class="active"><a href="#"><p>Alert</p></a></div>
+      </section>
+
+      <form action="" method="post">
+        <label for="target-group">Target Group</label>
+        <input type="text" id="target-group" name="target-group" placeholder=" Pregnant women..." />
+
+        <label for="Message">Message</label>
+        <textarea name="Message" id="Message" placeholder="Please leave a message..." cols="35" rows="10"></textarea><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
