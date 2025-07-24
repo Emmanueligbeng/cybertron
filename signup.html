@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="./styles/signup.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main>
+    <form action="#" method="post">
+      <header>
+        <h2>Create Account</h2>
+        <p>Sign up to get started</p>
+      </header>
+
+      <label for="fullname">Full Name</label>
+      <input type="text" placeholder="John Doe" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" placeholder="johndoe@example.com" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" placeholder="08012345678" id="phone" name="phone" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" required />
+      <p id="pass-message" class="error-message"></p>
+
+      <label for="Address">Location</label>
+      <input type="text" placeholder="LGA / City" id="Address" name="Address" required />
+
+      <button type="submit">Sign Up</button>
+
+      <div class="links">
+        <a href="login.html">Already Have An Account?</a>
+      </div>
+    </form>
+  </main>
+</body>
+<script src="./scripts/signup.js"></script>
+  
+</html>

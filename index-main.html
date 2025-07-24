@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoHealth | Malaria Risk Monitor</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/index-main.css" />
+  </head>
+
+  <body>
+    <main id="map">
+      <!-- Search & Locate Controls -->
+      <nav class="search-container" aria-label="Search and locate">
+        <div class="search-bar">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input type="search" placeholder="Search Location" aria-label="Search Location" />
+        </div>
+        <button class="target-container" title="Find My Location" aria-label="Find My Location">
+          <i class="fas fa-location-crosshairs"></i>
+        </button>
+      </nav>
+
+      <!-- Info Footer -->
+      <footer>
+        <section class="header">
+          <h2>Cross River, Calabar.</h2>
+          <p>Risk Level</p>
+        </section>
+
+        <div class="status">
+          <span style="border-color: #50c878;">Very Low</span>
+          <span style="border-color: #a4de02;">Low</span>
+          <span style="border-color: #ffcc00;">Moderate</span>
+          <span style="border-color: #ff8000;">High</span>
+          <span style="border-color: #ff0033;">Very High</span>
+        </div>
+
+        <p>Get Expert Health Tips, Malaria Prevention Alerts</p>
+        <a href="login.html" class="cta-button">Sign In</a>
+      </footer>
+    </main>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

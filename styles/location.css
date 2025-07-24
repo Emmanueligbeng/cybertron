@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    background-color: skyblue;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.btn-group a{
+    text-decoration: none;
+  }
+
+/* Card Container */
+main {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    background-color: azure;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Image Container */
+.location-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.location-icon img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Group */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(0, 131, 0);
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 85%;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8bb71b;
+}
+
+.btn-1{
+    color: white;
+}
+.btn-special{
+    background-color: white;
+    border: 1px solid black;
+}
+.btn-special:hover{
+    background-color: rgb(224, 224, 224);
+    border-width: 1px;
+    border: 1px solid black;
+}
+
+@media (max-width: 650px) {
+
+    body{
+        background-color: white;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .location-icon img {
+        max-width: 250px;
+        margin: 70px 0 0 0;
+    }
+
+    main {
+        padding: 15px 10px;
+        height: 100vh;
+        box-shadow: 0 8px 16px rgba(0, 0, 0,;
+
+    }
+}

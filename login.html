@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./styles/login.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main>
+    <form action="#">
+      <header>
+        <h2>Welcome Back</h2>
+        <p>Login to access your account</p>
+      </header>
+
+      <label for="number">Phone Number</label>
+      <input type="number" placeholder="01028367387" id="number" name="phone-number" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <div class="remember-me-row">
+        <div class="remember-me">
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="remember">Remember Me</label>
+        </div>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <div class="links">
+        <a href="signup.html">Don’t Have An Account?</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
